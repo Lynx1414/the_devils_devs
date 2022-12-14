@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Source+Code+Pro:wght@400;700&display=swap');
+
+html, body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-image: linear-gradient(#0C0C0C 85%, rgb(53, 52, 52));
+    font-family: 'Source Code Pro', monospace;
+}
+
+header img{
+    width: 100%;
+    height : 50%;
+    margin: 0; 
+}
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+}
+
+nav li{
+    list-style-type: none;
+    align-self: center;
+    
+}
+
+nav a{
+    color:rgba(148, 140, 140, 0.712);
+    text-decoration: none;
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.5em;
+    
+}
+nav a:hover{
+    color:rgba(219, 213, 213, 0.74);
+}
+
+footer{
+    /* background-color: blueviolet; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    width: 100%;
+    bottom: 0px;
+    overflow: hidden;
+    height: 35px;
+}
+
+.logo{
+    height: 20px;
+    margin: 5px 12px;  
+}
