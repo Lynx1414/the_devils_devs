@@ -11,7 +11,6 @@ html, body{
     html {
         background: linear-gradient(#0C0C0C 85%, rgb(53, 52, 52));
 }
-
 header img{
     width: 100%;
     height : 50%;
@@ -23,17 +22,15 @@ ul{
     align-items: center;
     padding: 0;
 }
-
 nav li{
     list-style-type: none;
     align-self: center;
-    
 }
-
 nav a{
     color:rgba(148, 140, 140, 0.712);
     text-decoration: none;
     font-family: 'Metal Mania', cursive;
+    font-size: 2em;
     font-size: 2em;
     
 }
@@ -110,7 +107,65 @@ tr {
     font-weight: bold;
 }
 
-footer {
+
+.store{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px 134px;
+    margin: 10% 10%;
+}
+.shirt, .album, .poster{
+    width: 20%;
+    text-decoration: none;
+}
+img{
+    filter: brightness(60%);
+}
+figcaption{
+    font-size: 16px;
+    color: rgba(148, 140, 140, 0.712);
+}
+p{
+    width: 60%;
+    font-size: 1.5em;
+    text-align: justify;
+}
+.order{
+    color:rgba(148, 140, 140, 0.712);
+    font-family:'Metal Mania', cursive;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+form{
+    display: flex;
+    justify-content: space-around;
+    margin: 5% auto;
+}
+legend{
+    color:rgba(148, 140, 140, 0.712);
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.5em;
+    text-align: center;
+}
+label{
+    color:rgba(148, 140, 140, 0.712);
+    font-family: 'Metal Mania', cursive;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+#name, #email, #news-letter, textarea{
+    background-color: rgba(148, 140, 140, 0.712);
+}
+button {
+    background-color: #0C0C0C;
+    color: rgba(219, 213, 213, 0.74);
+}
+.button{
+    font-family: 'Metal Mania', cursive;
+    font-size: 1.2em;
+}
+footer{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +175,6 @@ footer {
     overflow: hidden;
     height: 35px;
 }
-
 .logo{
     height: 20px;
     margin: 5px 12px;  
