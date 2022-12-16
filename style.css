@@ -8,8 +8,8 @@ html, body{
     font-size: 16px;
     }
     
-    html {
-        background: linear-gradient(#0C0C0C 85%, rgb(53, 52, 52));
+html {
+     background: linear-gradient(#0C0C0C 85%, rgb(53, 52, 52));
 }
 header img{
     width: 100%;
@@ -39,6 +39,15 @@ nav a:hover{
     color:rgba(219, 213, 213, 0.74);
 }
 
+@media screen and (max-width: 320px){
+    nav a{
+        font-size: 1.4em;
+    }
+    label{
+        font-size: 1em;
+        letter-spacing: 1px;
+    }
+}
 #home,
 #tour_dates {
     display: flex;
@@ -107,7 +116,6 @@ tr {
 .date {
     font-weight: bold;
 }
-
 /* store */
 .store{
     display: flex;
@@ -127,10 +135,31 @@ figcaption{
     font-size: 16px;
     color: rgba(148, 140, 140, 0.712);
 }
-.description {
+.descri.descriptiontion {
     width: 60%;
     font-size: 1.5em;
     text-align: justify;
+}
+@media screen and (max-width: 1024px) {
+    .description{
+        text-align: left;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 425px) {
+    .store{
+        gap: 10px 64px;
+        margin: 9% 10%;
+    }
+    .description{
+        font-size: 0.8em;
+        width: 80%;
+    }
+    .ref{
+        font-size: 0.6em;
+    }
 }
 .order{
     color:rgba(148, 140, 140, 0.712);
@@ -142,22 +171,59 @@ figcaption{
 form{
     display: flex;
     justify-content: space-around;
-    margin: 5% auto;
+    margin: 10% auto;
+    
+}
+@media screen and (max-width: 768px) {
+    .description{
+        font-size: 1.2em;
+    }
+    textarea{
+        width: 100%;
+        height: 50%;
+        align-self: center;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+    input#news-letter{
+        align-items: center;
+    }
 }
 legend{
     color:rgba(148, 140, 140, 0.712);
-    font-family: 'Metal Mania', cursive;
+    /* font-family: 'Metal Mania', cursive; */
     font-size: 1.5em;
     text-align: center;
 }
 label{
     color:rgba(148, 140, 140, 0.712);
     font-family: 'Metal Mania', cursive;
-    font-size: 1em;
-    letter-spacing: 1px;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
-#name, #email, #news-letter, textarea{
+#name, #email, textarea{
     background-color: rgba(148, 140, 140, 0.712);
+}
+input[type="text" i] {
+    color:rgba(219, 213, 213, 0.74);
+    font-weight: bold;
+    font-size: 16px;
+}
+input[type="checkbox" i]{
+    margin: 10px;
+    padding: 0;
+    vertical-align: baseline;
+    background-color: #0C0C0C;
+    color: rgba(219, 213, 213, 0.74);
+}
+textarea[placeholder="About You" i] {
+    color:rgba(219, 213, 213, 0.74);
+    font-weight: bold;
+    font-size: 16px;
 }
 button {
     background-color: #0C0C0C;
@@ -165,7 +231,8 @@ button {
 }
 .button{
     font-family: 'Metal Mania', cursive;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    letter-spacing: 2px;
 }
 
 footer{
