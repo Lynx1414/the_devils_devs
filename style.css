@@ -1,130 +1,181 @@
-@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Source+Code+Pro:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Metal+Mania&family=Source+Code+Pro:wght@400;700&display=swap");
 
-html, body{
-    margin: 0;
-    padding: 0;
-    font-family: 'Source Code Pro', monospace;
-    color: rgba(219, 213, 213, 0.74);
-    font-size: 16px;
-    }
-    
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Code Pro", monospace;
+  color: rgba(219, 213, 213, 0.74);
+  font-size: 16px;
+}
 html {
-     background: linear-gradient(#0C0C0C 85%, rgb(53, 52, 52));
+  background: linear-gradient(#0c0c0c 85%, rgb(53, 52, 52));
 }
-header img{
-    width: 100%;
-    height : 50%;
-    margin: 0; 
+header img {
+  width: 100%;
+  height: 50%;
+  margin: 0;
 }
-ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0;
+/* nav */
+ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
 }
-nav li{
-    list-style-type: none;
-    align-self: center;
+nav li {
+  list-style-type: none;
+  align-self: center;
 }
-nav a{
-    color:rgba(148, 140, 140, 0.712);
-    text-decoration: none;
-    font-family: 'Metal Mania', cursive;
-    font-size: 2em;
+nav a {
+  color: rgba(148, 140, 140, 0.712);
+  text-decoration: none;
+  font-family: "Metal Mania", cursive;
+  font-size: 2em;
+  font-size: 2em;
 }
-nav a:hover{
-    color:rgba(219, 213, 213, 0.74);
-}
+<<<<<<< HEAD
 .home,
 .tour_dates {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 7%;
+=======
+
+nav a:hover {
+  color: rgba(219, 213, 213, 0.74);
+>>>>>>> b42abf2f0332f1c94f083e9b991aa9197616c45f
 }
 
+#home,
+#tour_dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5% 10%;
+}
+
+/* home______________________________________________________________________________________________*/
 #about_the_band {
-    font-family: 'Metal Mania', cursive;
-    font-size: 2.5em;
-    text-align: justify;
-    letter-spacing: 3px;
+  font-family: "Metal Mania", cursive;
+  font-size: 2em;
+  text-align: center;
 }
 
 #band {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 7%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15%;
+  margin: 7% 0;
 }
 
 .member {
-    width: 24%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 1.2em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-.band_member {
-    width: 60%;
+.member > img {
+  width: 80%;
 }
 
-#press {
-    font-size: 1.3em;
-    text-align: justify;
+#video {
+  display: block;
+  width: 100%;
 }
 
 article {
-    margin: 80px auto;
+  margin-top: 10%;
 }
-
 .mag_signature {
-    text-align: right;
+  text-align: right;
 }
 
+/* tour dates_________________________________________________________________________________________*/
 h1 {
-    font-family: 'Metal Mania', cursive;
-    font-size: 2em;
+  font-family: "Metal Mania", cursive;
+  font-size: 2em;
+  letter-spacing: 4px;
 }
 
 table {
-    border-collapse: collapse;
+  border-collapse: collapse;
 }
 
 td,
 tr {
-    border-top: rgba(148, 140, 140, 0.712) solid 2px;
-    border-bottom: rgba(148, 140, 140, 0.712) solid 2px;
-    font-size: 1.3em;
-    text-align: center;
-    padding: 20px 30px;
+  border-top: rgba(148, 140, 140, 0.712) solid 2px;
+  border-bottom: rgba(148, 140, 140, 0.712) solid 2px;
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 1.3em;
 }
 
 .date {
-    font-weight: bold;
+  font-weight: bold;
+}
+/* store______________________________________________________________________________________________*/
+.store {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px 134px;
+  margin: 10% 10%;
+}
+.shirt,
+.album,
+.poster {
+  width: 20%;
+  text-decoration: none;
+}
+img {
+  filter: brightness(60%);
+}
+figcaption {
+  font-size: 16px;
+  color: rgba(148, 140, 140, 0.712);
+}
+.description {
+  width: 60%;
+  text-align: center;
 }
 
-.store{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px 134px;
-    margin: 10% 10%;
+.order {
+  color: rgba(148, 140, 140, 0.712);
+  font-family: "Metal Mania", cursive;
+  letter-spacing: 1px;
+  text-decoration: none;
 }
-.shirt, .album, .poster{
-    width: 20%;
-    text-decoration: none;
+/* contact ___________________________________________________________________________________________*/
+form {
+  display: flex;
+  justify-content: space-around;
+  margin: 10% auto;
 }
-img{
-    filter: brightness(60%);
+
+/* footer______________________________________________________________________________________________*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  background-color: rgb(53, 52, 52);
+  height: 35px;
 }
-figcaption{
-    font-size: 16px;
-    color: rgba(148, 140, 140, 0.712);
+.logo {
+  height: 20px;
+  margin: 5px 12px;
 }
-.description{
-    width: 60%;
+
+/* responsive for tablets________________________________________________________________________________*/
+@media screen and (max-width: 768px) {
+  #about_the_band {
     font-size: 1.5em;
+<<<<<<< HEAD
     text-align: justify;
 }
 @media screen and (max-width: 1024px) {
@@ -189,55 +240,116 @@ form{
 legend{
     color:rgba(148, 140, 140, 0.712);
     /* font-family: 'Metal Mania', cursive; */
+=======
+  }
+
+  #band {
+    grid-template-columns: 2fr 2fr;
+    gap: 10%;
+    margin: 7% 0;
+  }
+
+  h1 {
+    font-size: 1em;
+  }
+
+  td,
+  tr {
+    padding: 2px 3px;
+    font-size: 1em;
+  }
+
+  nav {
+    font-size: 10px;
+  }
+
+  textarea {
+    width: 100%;
+    height: 50%;
+    align-self: center;
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  input#news-letter {
+    align-items: center;
+  }
+
+  legend {
+    color: rgba(148, 140, 140, 0.712);
+>>>>>>> b42abf2f0332f1c94f083e9b991aa9197616c45f
     font-size: 1.5em;
     text-align: center;
-}
-label{
-    color:rgba(148, 140, 140, 0.712);
-    font-family: 'Metal Mania', cursive;
+  }
+
+  label {
+    color: rgba(148, 140, 140, 0.712);
+    font-family: "Metal Mania", cursive;
     font-size: 1.5em;
     letter-spacing: 2px;
-}
-#name, #email, textarea{
+  }
+
+  #name,
+  #email,
+  textarea {
     background-color: rgba(148, 140, 140, 0.712);
-}
-input[type="text" i] {
-    color:rgba(219, 213, 213, 0.74);
+  }
+
+  input[type="text" i] {
+    color: rgba(219, 213, 213, 0.74);
     font-weight: bold;
     font-size: 16px;
-}
-input[type="checkbox" i]{
+  }
+
+  input[type="checkbox" i] {
     margin: 10px;
     padding: 0;
     vertical-align: baseline;
-    background-color: #0C0C0C;
+    background-color: #0c0c0c;
     color: rgba(219, 213, 213, 0.74);
-}
-textarea[placeholder="About You" i] {
-    color:rgba(219, 213, 213, 0.74);
+  }
+
+  textarea[placeholder="About You" i] {
+    color: rgba(219, 213, 213, 0.74);
     font-weight: bold;
     font-size: 16px;
+  }
+
+  .button {
+  background-color: #0c0c0c;
+  color: rgba(219, 213, 213, 0.74);
+  }
+
+  .button {
+  font-family: "Metal Mania", cursive;
+  font-size: 1.5em;
+  letter-spacing: 2px;
+  }
 }
-button {
-    background-color: #0C0C0C;
-    color: rgba(219, 213, 213, 0.74);
-}
-.button{
-    font-family: 'Metal Mania', cursive;
-    font-size: 1.5em;
-    letter-spacing: 2px;
-}
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position:fixed;
-    width: 100%;
-    bottom: 0px;
-    overflow: hidden;
-    height: 35px;
-}
-.logo{
-    height: 20px;
-    margin: 5px 12px;  
+
+/* responsive for smartphones _______________________________________________________*/
+@media screen and (max-width: 425px) {
+  #band {
+    grid-template-columns: 1fr;
+    gap: 10%;
+    margin: 7% 0;
+  }
+  .store {
+    gap: 10px 64px;
+    margin: 9% 10%;
+  }
+
+  .description {
+    width: 80%;
+    font-size: 1em;
+  }
+
+  .ref {
+    font-size: 0.6em;
+  }
 }
