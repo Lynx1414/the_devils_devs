@@ -93,6 +93,7 @@ h1 {
 
 table {
   border-collapse: collapse;
+  margin-bottom: 7%;
 }
 
 td,
@@ -250,7 +251,7 @@ footer {
   }
 
   h1 {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   td,
@@ -268,7 +269,7 @@ footer {
 @media screen and (max-width: 425px) {
   #band {
     grid-template-columns: 1fr;
-    gap: 10%;
+    gap: 10vh;
     margin: 7% 0;
   }
   .store {
