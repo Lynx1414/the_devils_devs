@@ -165,7 +165,12 @@ form {
 }
 textarea {
   width: 100%;
-  height: 50%;
+  
+}
+
+fieldset{
+  padding: 30px;
+  margin: 20px;
 }
 
 legend {
@@ -218,6 +223,9 @@ font-family: "Metal Mania", cursive;
 font-size: 1em;
 letter-spacing: 2px;
 }
+
+
+
 textarea[placeholder="About You"]::placeholder{
   color: rgba(219, 213, 213, 0.74);
   opacity: 1;
@@ -304,4 +312,9 @@ footer {
   legend, label{
     font-size: 1em;
   }
+  fieldset{
+    border: none;
+  }
+  
+
 }
