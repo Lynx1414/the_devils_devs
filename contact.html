@@ -24,22 +24,24 @@
     <form action="mailto: thedevildevs@gmail.com" enctype="text/plain">
       <fieldset>
         <legend>Contact Us</legend>
-        <br />
 
         <label for="name">Name:</label>
-        <input id="name" type="text" name="Name" placeholder="" /><br /><br />
+        <input id="name" type="text" name="Name" placeholder="" /><br />
 
         <label for="email">E-mail:</label>
-        <input id="email" type="text" required placeholder="" /><br /><br />
-        <label for="news-letter">Accept to receive our news letter</label>
-        <input id="news-letter" type="checkbox" /><br /><br />
-        <textarea
-          rows="20"
-          cols="100"
-          type="textarea"
-          placeholder="About You"
-        ></textarea
-        ><br /><br />
+        <input id="email" type="text" required placeholder="" />
+
+        <div class="newsletter-chekbox">
+          <label for="newsletter">Receive our newsletter</label>
+          <input id="newsletter" type="checkbox" />
+          <textarea
+            rows="20"
+            cols="100"
+            type="textarea"
+            placeholder="About You"
+          ></textarea>
+        </div>
+
         <button type="submit"><span class="button">Submit</span></button><br />
       </fieldset>
     </form>
