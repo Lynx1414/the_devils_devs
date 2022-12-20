@@ -16,7 +16,17 @@ header img {
   margin: 0;
 }
 
-/* nav______________________________________________________________________________ */
+#scroll{
+  display: flex;
+  justify-content: center;
+}
+
+#scroll_logo{
+  width: 10%;
+  max-height: 38px;
+}
+
+/* nav_____________________________________________________________________________________________ */
 ul {
   display: flex;
   justify-content: space-around;
@@ -31,8 +41,7 @@ nav a {
   color: rgba(148, 140, 140, 0.712);
   text-decoration: none;
   font-family: "Metal Mania", cursive;
-  font-size: 2em;
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 nav a:hover {
@@ -75,6 +84,7 @@ nav a:hover {
 #video {
   display: block;
   width: 100%;
+  margin: 10% auto;
 }
 
 article {
@@ -82,6 +92,7 @@ article {
 }
 .mag_signature {
   text-align: right;
+  margin-bottom: 15%;
 }
 
 /* tour dates_________________________________________________________________________________________*/
@@ -238,6 +249,11 @@ footer {
   margin: 5px 12px;
 }
 
+@media screen and (max-width: 1466px){
+  #scroll{
+    display: none;
+  }
+}
 /* responsive for tablets________________________________________________________________________________*/
 @media screen and (max-width: 768px) {
   #about_the_band {
