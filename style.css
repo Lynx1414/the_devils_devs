@@ -122,35 +122,41 @@ tr {
 /* store______________________________________________________________________________________________*/
 .store {
   display: flex;
+  /* flex-flow: row wrap; */
   justify-content: center;
   align-items: center;
-  gap: 10px 74px;
-  margin: 10% 10%;
+  margin: 10%;
 }
-.shirt,
-.album,
+
+.shirt,.album,
 .poster {
-  width: 20%;
+  width: 30%;
   text-decoration: none;
 }
+
 img {
   filter: brightness(60%);
 }
+
 figcaption {
   font-size: 16px;
   color: rgba(148, 140, 140, 0.712);
 }
+
 .description {
   width: 60%;
-  text-align: center;
+  text-align: left;
+  padding: 10%;
+  word-wrap: break-word;
 }
 
-.order {
+a.order {
   color: rgba(148, 140, 140, 0.712);
   font-family: "Metal Mania", cursive;
   letter-spacing: 1px;
   text-decoration: none;
-}
+  }
+
 /* contact ___________________________________________________________________________________________*/
 form {
   display: flex;
@@ -160,61 +166,46 @@ form {
 textarea {
   width: 100%;
   height: 50%;
-  align-self: center;
-}
-
-fieldset {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: flex-start;
-}
-
-input#news-letter {
-  align-items: center;
 }
 
 legend {
   color: rgba(148, 140, 140, 0.712);
-  font-size: 1.2em;
+  font-size: 1.4em;
   text-align: center;
+  margin-bottom: 1%;
 }
 
 label {
   color: rgba(148, 140, 140, 0.712);
   font-family: "Source Code Pro", monospace;
-  font-size: 1em;
+  font-size: 1.2em;
   letter-spacing: 1px;
-}
-.input-chekbox{
-  width: 100%;
-  font-size: 16px;
 }
 
 #name,
 #email,
 textarea {
   background-color: rgba(148, 140, 140, 0.712);
+  margin: 2% 0 2% 0;
 }
 
-input[type="text" i] {
+#email[placeholder="" i] {
   color: rgba(219, 213, 213, 0.74);
   font-weight: bold;
   font-size: 16px;
+  width: 40%;
+}
+input #name[placeholder=""] {
+  color: rgba(219, 213, 213, 0.74);
+  font-weight: bold;
+  font-size: 16px;
+  width: 20%;
 }
 
 input[type="checkbox" i] {
-  margin: 5px 0 15px 0;
+  margin: 15px 0 15px 0;
   padding: 0;
-  vertical-align: baseline;
-  background-color: #0c0c0c;
   color: rgba(219, 213, 213, 0.74);
-}
-
-textarea[placeholder="About You" i] {
-  color: rgba(219, 213, 213, 0.74);
-  font-weight: bold;
-  font-size: 16px;
 }
 
 .button:hover {
@@ -230,6 +221,13 @@ letter-spacing: 2px;
 textarea[placeholder="About You"]::placeholder{
   color: rgba(219, 213, 213, 0.74);
   opacity: 1;
+}
+textarea[placeholder="About You" i] {
+  color: rgba(219, 213, 213, 0.74);
+  font-size: 16px;
+}
+:placeholder-shown:focus::placeholder{
+  color: transparent;
 }
 
 
@@ -277,12 +275,15 @@ footer {
   }
 
   nav {
-    font-size: 10px;
+    font-size: 15px;
   }
 
-}
+ 
 /* responsive for smartphones _______________________________________________________*/
 @media screen and (max-width: 425px) {
+  nav {
+    font-size: 10px;
+  }
   #band {
     grid-template-columns: 1fr;
     gap: 10vh;
@@ -290,7 +291,6 @@ footer {
   }
   .store {
     margin: 9% 10%;
-  
   }
 
   .description {
@@ -300,5 +300,8 @@ footer {
 
   .ref {
     font-size: 0.6em;
+  }
+  legend, label{
+    font-size: 1em;
   }
 }
