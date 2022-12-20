@@ -16,16 +16,6 @@ header img {
   margin: 0;
 }
 
-#scroll{
-  display: flex;
-  justify-content: center;
-}
-
-#scroll_logo{
-  width: 10%;
-  max-height: 38px;
-}
-
 /* nav_____________________________________________________________________________________________ */
 ul {
   display: flex;
