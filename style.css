@@ -85,6 +85,7 @@ nav a:hover {
 #video {
   display: block;
   width: 100%;
+  border-radius: 30%;
 }
 
 article {
@@ -256,6 +257,13 @@ footer {
   #scroll{
     display: none;
   }
+
+  #video {
+    display: block;
+    width: 100%;
+    margin-top: 5vh; 
+  }
+
 }
 
 /* responsive for tablets________________________________________________________________________________*/
