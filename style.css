@@ -88,6 +88,14 @@ nav a:hover {
   border-radius: 30%;
 }
 
+#copyright{
+  font-size: 0.6em;
+}
+
+#copyright > a{
+  color:rgba(219, 213, 213, 0.74);
+}
+
 article {
   margin-top: 10%;
 }
